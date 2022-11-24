@@ -5,9 +5,8 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function random() {
-  
   //Opciones
-  let who = ["the dog", "my granma", "his turtle", "my bird"];
+  let who = ["The dog", "My granma", "His turtle", "My bird", "Messi"];
   let what = ["eat", "pissed", "crushed", "broked"];
   let when = [
     "before the class",
@@ -16,16 +15,14 @@ window.onload = function random() {
     "during my lunch",
     "while I was praying"
   ];
-  let action = ["ate", "peed", "crushed", "broke"];
-  
+
   //Aleatorizador
-  let actionRandom = Math.floor(Math.random() * action.length);
+
   let whenRandom = Math.floor(Math.random() * when.length);
   let whoRandom = Math.floor(Math.random() * who.length);
   let whatRandom = Math.floor(Math.random() * what.length);
-  
 
   document.querySelector(
     "#excuse"
-  ).innerHTML = `${who[whoRandom]} ${action[actionRandom]} ${what[whatRandom]} ${when[whenRandom]}`;
+  ).innerHTML = `${who[whoRandom]} ${what[whatRandom]} ${when[whenRandom]}`;
 };
